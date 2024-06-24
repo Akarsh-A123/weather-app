@@ -69,23 +69,27 @@ function whether(){
             result2.innerHTML=`<h1 class="me-1 mb-2">${Math.round(data.main.temp-273.15)}<sup>o</sup></h1>
                 <h2 class="mb-3">${data.name}<br>
                 <span>${hrs}:${min} ${a},${day},${date} ${mont}</span></h2>
-                <h3 class='fs-5 ms-4  mb-4 text-center'><img src='http://openweathermap.org/img/w/10d.png'><br>
+                <h3 class='fs-5 ms-4  mb-4 text-center'><img src='http://openweathermap.org/img/w/${data.weather[0].icon}.png'><br>
                 ${data.weather[0].main}
                 </h3>`
                 console.log(data.weather[0].main)
             if(data.weather[0].main=='Rain'){
                 
-                bdy.style.backgroundImage="url('https://i.gifer.com/7oJu.gif')"
+                bdy.style.backgroundImage="url('https://i.gifer.com/fyDi.gif')"
             }
-            else if(data.weather[0].main=='Clouds'){
+            else if(data.weather[0].main=='Clear'){
                  bdy.style.backgroundImage="url('./clouds.gif')"
             }
             else if(data.weather[0].main=='Snow'){
                 bdy.style.backgroundImage="url('./winter.gif')"
            }
-           else if(data.weather[0].main=='Snow'){
-                bdy.style.backgroundImage="url('./sunny.gif')"
+           else if(data.weather[0].main=='Storm'){
+                bdy.style.backgroundImage="url('https://media1.tenor.com/m/Vzfwz6FssP0AAAAC/storm-coming.gif')"
            }
+           else if(data.weather[0].main=='Clouds'){
+            bdy.style.backgroundImage="url('https://media1.tenor.com/m/YhQV3T7bjXwAAAAC/heaven-cloud.gif')"
+            }
+            
         })
     })
 }
