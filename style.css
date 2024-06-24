@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bdy{
+    width:80%;
+    height:80vh;
+    /*background-image: url('https://31.media.tumblr.com/2671daae877b04cb35d36101ea033871/tumblr_mj7j6htBG01rsc0rbo1_500.gif');*/
+    background-image: url('https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #fdfbfb;
+}
+.col-md-7{
+    width:60%;
+    height:80vh;
+    display: flex;
+    align-items: end;
+    padding-left: 50px;
+}
+.col-md-5{
+    width:40%;
+    height: 80vh;
+    /*box-shadow: 0 0 5px 0 ;*/
+    background: transparent;
+    backdrop-filter: blur(30px);
+    border-left: .5px solid rgba(173, 173, 173, 0.089);
+      
+}
+.form-control:focus{
+    background-color: transparent;
+    border:transparent;
+    color:white
+}
+.col-md-7 h1{
+  font-family: "Noto Sans", sans-serif;
+  font-size: 130px;
+  
+}
+.col-md-7 h2{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 60px;
+}
+.col-md-7 span{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 25px;
+}
+.form-control{
+    height:80px;
+    width:90%;
+    border: none;
+    border-bottom: 1px solid rgb(75, 70, 70);
+    background: transparent;
+    font-size: 25px;
+}
+.btn2{
+        width:150px;
+        border-radius: 0px;
+        background: transparent;
+        font-size: 40px;
+        border: none;
+}
+.details h3{
+    /*color: #586062;*/
+    color:rgb(230, 229, 229);
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:760px){
+    .col-md-7 h1{
+        font-size: 60px;
+        margin-left: 20px;
+      }
+      .col-md-7 h2{
+          font-size: 30px;
+      }
+      .col-md-7 h3{
+        font-size: 15px !important;
+        margin-right: 30px !important;
+        margin-bottom: 20px !important;
+    }
+      .col-md-7 span{
+          font-size: 15px;
+      }
+      .col-md-7{
+        padding: 30px 0px 30px 0px;
+      }
+      .col-md-7{
+        width:100%
+      }
+      .col-md-5{
+        width:100%
+      }
+      .bdy{
+        width:100%;
+        height:auto;
+      }
+}
